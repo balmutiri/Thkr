@@ -65,8 +65,7 @@
               "browserTarget": "thkr:build:production"
             },
             "development": {
-              "browserTarget": "thkr:build:development",
-              "proxyConfig": "src/proxy.config.json"
+              "browserTarget": "thkr:build:development"
             }
           },
           "defaultConfiguration": "development"

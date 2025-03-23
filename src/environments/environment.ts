@@ -1,4 +1,16 @@
+const baseUrl = 'http://localhost:4200';
+
 export const environment = {
     production: false,
-    apiUrl: 'http://localhost:8081'
-};
+
+    application: {
+        baseUrl
+
+      },
+      apis: {
+        default: {
+          url: 'http://localhost:8081',
+          rootNamespace: 'nove',
+        },
+      },
+  };

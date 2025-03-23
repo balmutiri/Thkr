@@ -1,4 +1,16 @@
+const baseUrl = 'https://athkar-sa.com';
+
 export const environment = {
     production: true,
-    apiUrl: 'https://thkr.onrender.com'
-};
+
+    application: {
+        baseUrl
+
+      },
+      apis: {
+        default: {
+          url: 'https://thkr.onrender.com',
+          rootNamespace: 'nove',
+        },
+      },
+  };

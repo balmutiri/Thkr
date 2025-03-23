@@ -7,15 +7,15 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class HomeService {
-  private apiUrl = environment.apiUrl;
+  private apiUrl = environment.apis.default.url;
 
   constructor(private http: HttpClient) { }
 
   getRandomMessage(): Observable<{ message: string }>{ 
-    return this.http.get<{ message: string }>(`${this.apiUrl}/api/random-message`);
+    return this.http.get<{ message: string }>(`https://thkr.onrender.com/api/random-message`);
   }
 
   getRandomZker(): Observable<{ message: string }>{ 
-    return this.http.get<{ message: string }>(`${this.apiUrl}/api/random-zker`);
+    return this.http.get<{ message: string }>(`$https://thkr.onrender.com/api/random-zker`);
   }
 }

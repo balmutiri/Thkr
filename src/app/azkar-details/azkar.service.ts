@@ -12,7 +12,7 @@ export class AzkarService {
   constructor(private http: HttpClient) { }
 
   getAzkarList(): Observable<IAzkarList[]>{ 
-    return this.http.get<IAzkarList[]>(`${environment.apiUrl}//api/azkar-list`);
+    return this.http.get<IAzkarList[]>(`${environment.apiUrl}/api/azkar-list`);
   }
   
 }

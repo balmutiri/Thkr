@@ -7,6 +7,13 @@ const PORT = process.env.PORT || 8080;
 
 app.use(bodyParser.json());
 
+const allowedOrigins = ['https://athkar-sa.com', 'http://athkar-sa.com'];
+
+app.use(cors({
+  origin: allowedOrigins, 
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, 
+}));
 
 app.get("/api/azkar-list", (req, res) => {
   let azkarList = 

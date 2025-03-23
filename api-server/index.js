@@ -2,6 +2,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const app = express();
+
+const PORT = process.env.PORT || 8080;
+
 app.use(bodyParser.json());
 
 
@@ -715,6 +718,11 @@ app.get("/api/random-zker", (req, res) => {
     res.json({ message: randomZker});
 });
 
-app.listen(8081, () => console.log("API Server listening on port 8081!"));
+app.get("/", (req, res) => {
+    res.send("Hello from Render!");
+});
+
+
+app.listen(PORT, () => console.log("API Server listening on port ${PORT}!"));
 
 

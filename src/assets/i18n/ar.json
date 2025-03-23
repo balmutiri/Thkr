@@ -1,0 +1,18 @@
+{
+    "Home": "الرئيسية",
+    "MorningAzkar": "أذكار الصباح",
+    "NightAzkar": "أذكار المساء",
+    "DailyAzkar": "الورد اليومي",
+    "SleepingAzkar": "أذكار النوم",
+    "PrayingAzkar": "أذكار الصلاة",
+    "azkar": "أذكار",
+    "filter": "{{filter}}",
+    "RandomAzkar": "ذكر عشوائي",
+    "DailyMessage": "رسالة اليوم",
+    "morning": "أذكار الصباح",
+    "night": "أذكار المساء",
+    "daily": "الورد اليومي",
+    "msbha": "التسبيح",
+    "praying":"أذكار الصلاة",
+    "sleep": "أذكار النوم"
+}

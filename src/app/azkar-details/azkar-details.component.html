@@ -1,0 +1,28 @@
+<div class="page-name">
+  <p> {{ filter | translate }}</p>
+</div>
+  <div class="container">
+    <ul class="azkar-list">
+      <li class="azkar-item" *ngFor="let azkar of getFilteredAzkar()">
+
+        <div class="repeat-box">
+          <button class="repeat-btn" (click)="resetRepeat(azkar)">
+            <mat-icon>autorenew</mat-icon>
+          </button>
+          <span class="repeat-max">{{ azkar.originalRepeat }}</span>
+          <span class="repeat-count" (click)="decreaseRepeat(azkar)">{{ azkar.repeat }}</span>
+        </div>   
+
+        <div class="zekr-content-box">
+          <p *ngIf="azkar.isQuranVerse" class="quran-title">بسم الله الرحمن الرحيم</p>
+          <p class="zekr-content">{{ removeTashkeel(azkar.zekr) }}</p>
+          <hr *ngIf="azkar.bless" class="bless-separator">
+          <span *ngIf="azkar.bless" class="bless">{{ azkar.bless }}</span>
+        </div> 
+
+      </li>
+    </ul>
+  </div>
+  
+  
+  

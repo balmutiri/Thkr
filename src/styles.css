@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #eef4f4;
+    font-family: 'Cairo';
+    font-size: 16px;
+    color: #444;
+  }
+  
+
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */

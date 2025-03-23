@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="azkar-cards">
+        <div class="azkar-card" *ngFor="let azkar of azkarList" [ngStyle]="{ 'background-color': azkar.color }" [routerLink] = "azkar.routerLink" [queryParams]="{ filter: azkar.queryParams }">
+          <div class="icon">
+            <img [src]="azkar.icon" alt="Azkar Icon">
+          </div>
+          <div class="info">
+            <h3 [ngStyle]="{ 'color': azkar.textColor }">{{ azkar.title }}</h3>
+          </div>
+        </div>
+      </div>
+      <div class="random-container">
+        <div class="random-item">
+            <h3 class="random-title">{{ 'RandomAzkar' | translate }}</h3>
+            <div class="random">{{ randomZaker }}</div>
+        </div>
+    
+        <div class="random-item">
+          <h3 class="random-title">{{ 'DailyMessage' | translate }}</h3>
+          <div class="random"> {{ randomMessage }} </div>
+        </div>
+    </div>
+  </div>

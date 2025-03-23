@@ -1,0 +1,16 @@
+{
+    "Home": "Home",
+    "MorningAzkar": "Morning Azkar",
+    "NightAzkar": "Night Azkar",
+    "DailyAzkar": "Daily Azkar",
+    "SleepingAzkar": "Sleeping Azkar",
+    "PrayingAzkar": "Praying Azkar",
+    "azkar": "Azkar",
+    "filter": "{{filter}}",
+    "RandomAzkar": "Random Azkar",
+    "DailyMessage": "Daily Message",
+    "morning": "Morning",
+    "night":"Night",
+    "daily":"Daily",
+    "msbha": "msbha"
+}

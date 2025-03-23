@@ -1,0 +1,110 @@
+.header-container {
+  background-color: #eef4f4;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.text-container {
+  margin-left: 10px;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+p {
+  color: #3b82f6;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .logo img {
+    width: 120px; 
+    height: 90px;
+  }
+
+  .ml-4 {
+    margin-top: 10px; 
+  }
+  
+  .hijri-date {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* 🔹 📱 Responsive for iPhones & Small Screens */
+@media (max-width: 768px) {
+  /* 🛠 Adjust Header */
+  .header-container {
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* 🛠 Resize Icon */
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* 🛠 Adjust Logo */
+  .logo img {
+    width: 100px; 
+    height: 75px;
+  }
+
+  /* 🛠 Adjust Text */
+  h2 {
+    font-size: 1rem;
+  }
+
+  .hijri-date {
+    font-size: 16px;
+  }
+}
+
+/* 🔹 📱 Extra Small Screens (iPhone SE, Older Phones) */
+@media (max-width: 480px) {
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo img {
+    width: 90px; 
+    height: 65px;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+
+  .hijri-date {
+    font-size: 14px;
+  }
+}

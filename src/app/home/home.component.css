@@ -1,0 +1,173 @@
+.container {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: auto; 
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.azkar-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  
+  .azkar-card {
+    background-color: #333;
+    color: white;
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    justify-content: center;
+  }
+  
+  .azkar-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .info h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+  }
+  
+  .info p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .title h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 30px;
+  }
+
+  .random-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 5px;
+    margin-top: 30px;
+    margin-right: 50px;
+  }
+
+  .random-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 1px; 
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+  }
+  
+  .random-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1px;
+  }
+
+  .random {
+    background-color: #eef4f4;
+    color: #4f5150;
+    padding: 15px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+  }
+
+  
+/* 🔹 📱 Responsive for iPhones & Small Screens */
+@media (max-width: 768px) {
+  /* 🛠 Adjust container for small screens */
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+  }
+
+  /* 🛠 Center titles & adjust size */
+  .title h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  /* 🛠 Make azkar cards smaller on mobile */
+  .azkar-card {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+  }
+
+  .icon img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+  }
+
+  .info h3 {
+    font-size: 16px;
+  }
+
+  /* 🛠 Adjust random message section */
+  .random-container {
+    align-items: center; 
+    margin: 5px auto;
+    width: 100%;
+  }
+
+  .random-item {
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .random-title {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .random {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+/* 🔹 📱 Extra small screens (iPhone SE, older phones) */
+@media (max-width: 480px) {
+  .azkar-card {
+    width: 90px;
+    height: 90px;
+  }
+
+  .random {
+    padding: 10px;
+    font-size: 13px;
+  }
+}

@@ -32,7 +32,6 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "https://athkar-sa.com",
               "budgets": [
                 {
                   "type": "initial",

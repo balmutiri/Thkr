@@ -8,11 +8,12 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class AzkarService {
+  private apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 
   getAzkarList(): Observable<IAzkarList[]>{ 
-    return this.http.get<IAzkarList[]>(`${environment.apiUrl}/api/azkar-list`);
+    return this.http.get<IAzkarList[]>(`${this.apiUrl}/api/azkar-list`);
   }
   
 }

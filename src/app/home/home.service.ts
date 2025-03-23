@@ -16,6 +16,6 @@ export class HomeService {
   }
 
   getRandomZker(): Observable<{ message: string }>{ 
-    return this.http.get<{ message: string }>(`$https://thkr.onrender.com/api/random-zker`);
+    return this.http.get<{ message: string }>(`https://thkr.onrender.com/api/random-zker`);
   }
 }

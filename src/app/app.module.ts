@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title, Meta } from '@angular/platform-browser';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -39,7 +39,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     MatProgressSpinnerModule
   ],
-  providers: [],
+  providers: [Title, Meta],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

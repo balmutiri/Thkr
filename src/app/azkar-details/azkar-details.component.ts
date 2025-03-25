@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AzkarService } from './azkar.service';
 import { IAzkarList, IAzkarDetails } from './azkar.model';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-azkar-details',
@@ -14,7 +15,8 @@ export class AzkarDetailsComponent {
   filter: string = 'morning';
   isLoading: boolean = true;
 
-  constructor(private azkarService: AzkarService, private router: Router, private route: ActivatedRoute){
+  constructor(private azkarService: AzkarService, private router: Router, private route: ActivatedRoute, private meta: Meta, private title: Title){
+    this.meta.updateTag({ name: 'description', content: 'مجموعة من الأذكار اليومية لحماية نفسك وتحصينك' });
   }
 
   ngOnInit(){

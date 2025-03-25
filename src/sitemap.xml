@@ -10,7 +10,17 @@
 <url>
   <loc>https://athkar-sa.com/</loc>
   <lastmod>2025-03-25T20:38:04+00:00</lastmod>
+  <priority>1.0</priority>
 </url>
-
+  <url>
+    <loc>https://athkar-sa.com/home</loc>
+    <lastmod>2025-03-25T20:38:04+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://athkar-sa.com/azkar</loc>
+    <lastmod>2025-03-25T20:38:04+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>

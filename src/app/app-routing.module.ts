@@ -10,11 +10,8 @@ const routes: Routes = [
   {
     path: 'azkar', component: AzkarDetailsComponent, title: "الاذكار"
   },
-  // {
-  //   path: 'catalog', component: CatalogComponent, title: "Catalog - Basma shop"
-  // },
   {
-    path: '', redirectTo: '/home', pathMatch: 'full'
+    path: '', component: HomeComponent, pathMatch: 'full', title: "الرئيسية"
   }
 ];
 

@@ -1,4 +1,7 @@
+require("dotenv").config();
+
 const express = require("express");
+
 const cors = require('cors');
 
 const bodyParser = require("body-parser");
@@ -7,9 +10,11 @@ const app = express();
 
 const PORT = process.env.PORT || 8080;
 
-app.use(bodyParser.json());
+const allowedOrigins = process.env.NODE_ENV === "production"
+  ? ['https://athkar-sa.com', 'http://athkar-sa.com']
+  : ['http://localhost:4200'];
 
-const allowedOrigins = ['https://athkar-sa.com', 'http://athkar-sa.com'];
+app.use(bodyParser.json());
 
 app.use(cors({
   origin: allowedOrigins, 
@@ -31,7 +36,7 @@ app.get("/api/azkar-list", (req, res) => {
             "isQuranVerse": true
         },
         {
-            "zekr": "قل هو الله احد، الله لصمد، لم يلد ولم يولد، ولم يكن له كفوا أحد.",
+            "zekr": "قل هو الله احد، الله الصمد، لم يلد ولم يولد، ولم يكن له كفوا أحد.",
             "repeat": 3,
             "bless": "من قالها حين يصبح وحين يمسى كفته من كل شىء (الإخلاص والمعوذتين).",
             "isQuranVerse": true

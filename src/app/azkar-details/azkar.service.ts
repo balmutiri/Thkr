@@ -13,7 +13,7 @@ export class AzkarService {
   constructor(private http: HttpClient) { }
 
   getAzkarList(): Observable<IAzkarList[]>{ 
-    return this.http.get<IAzkarList[]>(`https://thkr.onrender.com/api/azkar-list`);
+    return this.http.get<IAzkarList[]>(`${this.apiUrl}/api/azkar-list`);
   }
   
 }

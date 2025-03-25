@@ -8,9 +8,11 @@ import { IAzkarList, IAzkarDetails } from './azkar.model';
   templateUrl: './azkar-details.component.html',
   styleUrls: ['./azkar-details.component.css']
 })
+
 export class AzkarDetailsComponent {
   azkarList: IAzkarList[] = [];
   filter: string = 'morning';
+  isLoading: boolean = true;
 
   constructor(private azkarService: AzkarService, private router: Router, private route: ActivatedRoute){
   }
@@ -24,6 +26,7 @@ export class AzkarDetailsComponent {
           originalRepeat: detail.repeat // Store original repeat value
         }))
       }));
+      this.isLoading = false;
     });
 
     this.route.queryParams.subscribe((params) => {

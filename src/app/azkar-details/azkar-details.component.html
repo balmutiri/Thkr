@@ -1,9 +1,8 @@
-<div *ngIf="isLoading" class="loading-container">
-  <mat-spinner></mat-spinner> 
-</div>
-
 <div class="page-name">
   <p> {{ filter | translate }}</p>
+</div>
+<div *ngIf="isLoading" class="loading-container">
+  <mat-spinner></mat-spinner> 
 </div>
   <div  *ngIf="!isLoading" class="container">
     <ul class="azkar-list">

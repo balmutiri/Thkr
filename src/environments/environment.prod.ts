@@ -9,8 +9,7 @@ export const environment = {
       },
       apis: {
         default: {
-          url: 'https://thkr.onrender.com',
-          rootNamespace: 'nove',
+          url: 'https://thkr.onrender.com'
         },
       },
   };

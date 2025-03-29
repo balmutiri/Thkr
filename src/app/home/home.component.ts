@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeService } from './home.service';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -20,7 +21,13 @@ export class HomeComponent implements OnInit {
   randomMessage : string = '';
   randomZaker: string = '';
 
-  constructor(private homeService: HomeService){}
+  constructor(private homeService: HomeService, private titleService: Title, private metaService: Meta){
+    this.titleService.setTitle('الاذكار');
+    this.metaService.updateTag({
+      name: 'description',
+      content: 'مجموعة من الأذكار اليومية لحماية نفسك وتحصينك'
+    })
+  }
 
 
   ngOnInit() {

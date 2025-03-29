@@ -2,7 +2,7 @@
     <div class="azkar-cards">
         <div class="azkar-card" *ngFor="let azkar of azkarList" [ngStyle]="{ 'background-color': azkar.color }" [routerLink] = "azkar.routerLink" [queryParams]="{ filter: azkar.queryParams }">
           <div class="icon">
-            <img [src]="azkar.icon" alt="Azkar Icon">
+            <img [src]="azkar.icon">
           </div>
           <div class="info">
             <h3 [ngStyle]="{ 'color': azkar.textColor }">{{ azkar.title }}</h3>
